@@ -1,12 +1,9 @@
-// TODO: Include packages needed for this application
-
 const fs = require('fs'); 
 const inquirer = require('inquirer'); 
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+
 const questions = () => {
-    // using inquirer to prompt questions to user 
-    const questions = () => {
         // using inquirer to prompt questions to user 
         return inquirer.prompt([
         {
@@ -66,8 +63,8 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
-            choices: ['MIT', 'GNU'],
-            default: ["MIT"],
+            choices: ['MIT', 'GNU', 'Public Domain', 'No License'],
+            default: ["No License"],
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -85,7 +82,7 @@ const questions = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter steps required to install your project!');
+                    console.log('Please enter installation steps!');
                     return false; 
                 }
             }
@@ -98,7 +95,7 @@ const questions = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter a usage description!');
+                    console.log('Please enter a description of how to use the app!');
                     return false; 
                 }
             }
@@ -115,15 +112,32 @@ const questions = () => {
             message: 'What does the user need to know about contributing to the repo?'
         }
     ]);
+
     };
 
     
+const writeToFile = data => {
+    fs.writeFile('README.md', data, err => {
+        //error exists
+        if(err) {
+            console.log(err);
+            return;
+            //if no error
+        } else {
+            console.log("Your README has been created.")
+        }
+    })
+};
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+questions()
+.then(answers => {
+    return generateMarkdown(answers);
+})
+.then(data => {
+    return writeToFile(data);
+})
+.catch(err => {
+    console.log(err);
+})
 
-// Function call to initialize app
-init();
