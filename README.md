@@ -1,5 +1,5 @@
 # Readme Generator
-  ![Github licence](http://img.shields.io/badge/license-public-domain-blue.svg)
+  ![Github licence](https://img.shields.io/badge/Public%20Domain-License-blue)
   
   ## Description 
   Creates a professional README.md file.
