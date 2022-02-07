@@ -1,8 +1,8 @@
-# readme-generator
+# Readme Generator
   ![Github licence](http://img.shields.io/badge/license-No License-blue.svg)
   
   ## Description 
-  Creates a professional README.md file
+  Creates a professional README.md file.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,16 +10,19 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [Video](#video)
   
   ## Installation 
-  Clone this code and install node.js, npm, and npm inquirer
+  Clone the repository to your local drive.
   ## Usage 
-  Simply run the commands and answer the prompts and a README.md will be created.
+  Simply run the command "node index.js" and answer the prompts.
   ## License 
-  This project is license under No License
+  This project is licensed under No License
   ## Contributing 
-  Please clone the repo or fork the repo
+  This is not an open repo
   ## Tests
-  npm run tests
+  No tests are included in this repository
   ## Questions
-  If you have any questions about this projects, please contact me directly at dwetoskey224@gmail.com. You can view more of my projects at https://github.com/dwetoskey.
+  If you have any questions about this projects, please contact me directly at dwetoskey@gmail.com. You can view more of my projects at https://github.com/dwetoskey.
+  ## Video
+  (..\utils\Untitled_ Feb 6, 2022 7_04 PM.webm)
