@@ -1,5 +1,5 @@
 # Readme Generator
-  ![Github licence](http://img.shields.io/badge/license-No License-blue.svg)
+  ![Github licence](http://img.shields.io/badge/license-No-License-blue.svg)
   
   ## Description 
   Creates a professional README.md file.
@@ -25,4 +25,4 @@
   ## Questions
   If you have any questions about this projects, please contact me directly at dwetoskey@gmail.com. You can view more of my projects at https://github.com/dwetoskey.
   ## Video
-  (..\utils\Untitled_ Feb 6, 2022 7_04 PM.webm)
+  ![video tutorial](..\utils\Untitled_ Feb 6, 2022 7_04 PM.webm)
