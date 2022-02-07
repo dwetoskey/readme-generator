@@ -25,4 +25,4 @@
   ## Questions
   If you have any questions about this projects, please contact me directly at dwetoskey@gmail.com. You can view more of my projects at https://github.com/dwetoskey.
   ## Video
- ![video tutorial](..\utils\screencastify.mp4)
+ ![video tutorial](.\utils\screencastify.mp4)
